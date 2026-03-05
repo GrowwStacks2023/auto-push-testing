@@ -1,6 +1,6 @@
 @echo off
 
-cd /d C:\wamp64\www\auto-push-testing
+cd C:\wamp64\www\auto-push-testing
 
 git add .
 
