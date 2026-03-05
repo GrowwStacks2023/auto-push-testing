@@ -1,18 +1,19 @@
 @echo off
 
-cd /d C:\wamp64\www\auto-push-testing
+cd /d "C:\wamp64\www\auto-push-testing"
 
-echo Checking for changes...
+echo Checking for file changes...
 
-git add .
+git add -A
 
 git diff --cached --quiet
 IF %ERRORLEVEL% EQU 0 (
-    echo No changes to commit
+    echo No files changed.
 ) ELSE (
-    git commit -m "Auto commit %date% %time%"
-    git push origin mark
-    echo Changes pushed to GitHub
-)
+    echo Changes detected, pushing all files...
 
-pause
+    git commit -m "Auto backup %date% %time%"
+    git push origin mark
+
+    echo All changed files pushed successfully
+)
