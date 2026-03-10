@@ -19,3 +19,9 @@ To https://github.com/GrowwStacks2023/auto-push-testing.git
    e4f68bb..6450596  mark -> mark
 Script finished 
 Running Git automation 
+warning: in the working copy of 'gitlog.txt', LF will be replaced by CRLF the next time Git touches it
+Changes detected 
+[mark bf8b121] Auto commit 09-03-2026 18:05:21.28
+ 1 file changed, 8 insertions(+)
+error: failed to push some refs to 'https://github.com/GrowwStacks2023/auto-push-testing.git'
+^CRunning Git automation 
